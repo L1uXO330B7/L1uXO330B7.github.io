@@ -85,7 +85,7 @@
         }
         
         .backtop>a>img {
-            width: 50%;
+            width: 100%;
         }
         
         .subtitle>* {
@@ -184,7 +184,7 @@
             </header>
             <nav class="wow slideInUp backtop" data-wow-duration="2s" data-wow-delay="0.5s" onclick="reSet()">
                 <a href="#">
-                    <img src="https://lh3.googleusercontent.com/proxy/xTuSh3cM1WNjYSXILHroFrZsO0DuBniP8sjxjYxRhO8ySy9yD_s1fP7ooitTdknuC67RjMq5gfxSUQHwd_xAEH-d" alt="↑">
+                    <img src="https://digitalguider.com/Content/images/loader.gif" alt="↑">
                 </a>
             </nav>
             <article class="wow slideInDown row">
@@ -456,8 +456,6 @@
             $('.wow').attr('style', 'visibility: hidden; animation-name: none;');
             new WOW().init();
         }
-    </script>
-    <script>
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -474,6 +472,21 @@
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
+        // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        function isMobile() {
+            try {
+                document.createEvent("TouchEvent");
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        $(document).ready(function() {
+            if (isMobile()) {
+                alert(' 此網頁目前只支援電腦頁面 , 暫時不支援手機頁面 , \n如後續版本有變動請再來查看 , 謝謝 !!!');
+            }
+        });
     </script>
 </body>
 
