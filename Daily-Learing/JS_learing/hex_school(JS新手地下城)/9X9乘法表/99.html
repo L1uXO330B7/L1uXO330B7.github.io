@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+
+<body>
+    <div class="box" id="here">
+
+    </div>
+</body>
+
+</html>
+<script>
+    var i;
+    // i變數要利用迴圈從2到6
+    var j;
+    var r;
+    var t = "";
+    var d = "";
+    // 宣告變數為數字時，不
+    // j變數要利用迴圈從1到9
+    for (i = 2; i < 7; i++) {
+        t = "";
+        // 變數t在每次執行時都要歸零，避免疊加上次執行完的內容
+        for (j = 1; j < 10; j++) {
+            r = i * j;
+            t += `<li>${i} +"×"+ ${j} = ${i*j}</li>`
+            console.log(t);
+            if (j == 3) {
+                t += "<br>";
+            }
+        }
+        d += "<ul>" + t + "</ul>";
+    }
+    document.getElementById("here").innerHTML = d;
+    // 6*<ul>8*8<li> = 64</ul>    <il>9*9 = 81</ul>
+</script>

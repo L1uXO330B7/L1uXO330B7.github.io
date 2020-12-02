@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>https://wcc723.github.io/css/2013/10/10/css-transform-origin/ transform進階使用改變起始點
+    </p>
+    <p>原理:利用new Date()這個時間物件，抓當下時間(小時，分鐘，秒)，+上算角度，例如每過60秒，秒針動了60次，分針才動1格，時針可能動0.1格， 再利用document物件內的方getElementByID來用ID抓element，再.style取得style然後改變其中的transfrom參數，再用 windows這個物間中的setInterval()這個函式來讓上述結果每5秒刷新一次</p>
+    <h1 id="date"></h1>
+    <button id="clear" onclick="cleartime()">stop clock</button>
+</body>
+
+</html>
+<script>
+    var Mytime = window.setInterval(function() {
+        clock()
+    }, 1000);
+
+    function clock() {
+        var mydate = new Date();
+        console.log(5);
+        document.getElementById("date").innerHTML = mydate;
+    }
+
+    function cleartime() {
+        window.clearInterval(Mytime);
+    }
+</script>
+<!-- https://wcc723.github.io/css/2013/10/10/css-transform-origin/   transform進階使用改變起始點-->
+<!-- 原理:利用new Date()抓當下時間 -->
