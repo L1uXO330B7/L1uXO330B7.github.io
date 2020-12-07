@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>育愷小天地</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<style>
+    .projectboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project_icon {
+        width: 5%;
+        height: 5%;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul class="nav justify-content-center bg-light py-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Readme</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">小功能說明與紀錄</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projectsList">專案列表</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">My Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="container text-center">
+        <h1 class="bg-primary py-1">Hello World!</h1>
+        <h2>我是育愷!<br>歡迎參觀我的沙坑!<br>我正在積沙成塔!</h2>
+    </header>
+    <section class="container mt-5 d-flex projectboard">
+        <h3 id="projectsList">專案列表 :</h3>
+        <ul class="list-unstyled mt-3 border border-primary">
+            <li class="media p-4">
+                <img src="png/projecticon.png" class="mr-3 img-fluid project_icon" alt="專案說明">
+                <div class="media-body">
+                    <h4><a href="">美國文學報告</a></h4>
+                    <p class="text-justify">
+                        因應用外語系大三下的美國文學課中的期末報告要求，須發揮創意，並展現所學，所以我做了一頁網頁來將我學到東西呈現在上面。這是我的第一個製作的網頁，在 HTML 與 CSS 運用上都顯得很生疏。
+                    </p>
+                </div>
+            </li>
+            <li class="media p-4">
+                <img src="png/projecticon.png" class="mr-3 img-fluid project_icon" alt="專案說明">
+                <div class="media-body">
+                    <h4><a href="#">美國文學報告</a></h4>
+                    <p class="text-justify">
+                        因應用外語系大三下的美國文學課中的期末報告要求，須發揮創意，並展現所學，所以我做了一頁網頁來將我學到東西呈現在上面。這是我的第一個製作的網頁，在 HTML 與 CSS 運用上都顯得很生疏。
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
