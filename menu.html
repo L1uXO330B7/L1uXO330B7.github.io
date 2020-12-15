@@ -30,7 +30,7 @@
                 <a class="nav-link active" href="#">Readme</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">小功能說明與紀錄</a>
+                <a class="nav-link" href="#functionList">小功能說明與紀錄</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#projectsList">專案列表</a>
@@ -85,7 +85,7 @@
                 </div>
         </ul>
         <section class="container mt-5 d-flex projectboard">
-            <h3 id="projectsList">小功能說明與範例 :</h3>
+            <h3 id="functionList">小功能說明與範例 :</h3>
             <ul class="list-unstyled mt-3 border border-primary bg-light">
                 <li class="media p-4">
                     <img src="png/projecticon.png" class="mr-3 img-fluid project_icon" alt="專案說明">
@@ -99,29 +99,12 @@
                 <li class="media p-4">
                     <img src="png/projecticon.png" class="mr-3 img-fluid project_icon" alt="專案說明">
                     <div class="media-body">
-                        <h4><a href="https://big-code-milk.github.io/Carl/Summer-vaction-notes/hexoschool_hw/week1/%E5%80%8B%E4%BA%BA%E5%B1%A5%E6%AD%B7%E7%89%88%E5%9E%8B.html">六角學院前端體驗營 (履歷版型)</a></h4>
+                        <h4><a href="Daily-Learing/JS_learing/hex_school(JS新手地下城)/時鐘/clock.html">時鐘</a></h4>
                         <p class="text-justify">
-                            因緣際會報名了這個免費的大學生體驗營，開始對網頁切版有基礎的認識，這是此營隊的第一項主要作業，使用六角學院給的 Adobe XD 版型，來進行切版。第一次了解到 CSS Reset 的使用方法。
+                            利用new Date()這個時間物件，抓當下時間(小時，分鐘，秒)，+上算角度，例如每過60秒，秒針動了60次，分針才動1格，時針可能動0.1格， 再利用document物件內的方getElementByID or querySelector來用ID抓element，再.style取得style然後改變其中的transfrom參數，再用 windows這個物間中的setInterval()這個函式來讓上述結果每1秒刷新一次
                         </p>
                     </div>
                 </li>
-                <li class="media p-4">
-                    <img src="png/projecticon.png" class="mr-3 img-fluid project_icon" alt="專案說明">
-                    <div class="media-body">
-                        <h4><a href="https://big-code-milk.github.io/Carl/Summer-vaction-notes/hexoschool_hw/week5/01.html">六角學院前端體驗營 (甜點電商版型)</a></h4>
-                        <p class="text-justify">
-                            這是此營隊的第二項主要作業，使用六角學院給的Adobe XD版型，來進行切版。這次則是認識到 Flex, hover, 一些 HTML5 與 CSS3 的基本使用以及如何實現 RWD (響應式網頁設計)。
-                        </p>
-                    </div>
-                </li>
-                <li class="media p-4">
-                    <img src="png/projecticon.png" class="mr-3 img-fluid project_icon" alt="專案說明">
-                    <div class="media-body">
-                        <h4><a href="https://big-code-milk.github.io/Carl/Summer-vaction-notes/hexoschool_hw/week7/page/01.html">六角學院前端體驗營 (香水電商版型)</a></h4>
-                        <p class="text-justify">
-                            這是此營隊的第三項主要作業，使用六角學院給的Adobe XD版型，來進行切版。這次主要運用到了 BS4來進行排版以及一些 JQuery 和使用 SCSS 來修改幾項 BS4 預設值 。
-                        </p>
-                    </div>
             </ul>
         </section>
 </body>

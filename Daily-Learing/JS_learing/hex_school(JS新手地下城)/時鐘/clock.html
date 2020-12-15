@@ -62,11 +62,12 @@
             background-position: center;
             background-size: cover;
             position: relative;
+            border-radius: 50%;
         }
         
         #minutesPointer {
             margin: 100px;
-            width: 10px;
+            width: 13px;
             height: 150px;
             background-color: black;
             transform-origin: 10px 5px;
@@ -88,7 +89,7 @@
         
         #hoursPointer {
             margin: 100px;
-            width: 10px;
+            width: 15px;
             height: 100px;
             background-color: black;
             transform-origin: 5px 5px;
@@ -107,10 +108,10 @@
                 <a class="nav-link active" href="#">Readme</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">小功能說明與紀錄</a>
+                <a class="nav-link" href="/menu.html#functionList">小功能說明與紀錄</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projectsList">專案列表</a>
+                <a class="nav-link" href="/menu.html#projectsList">專案列表</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="#">My Resume</a>
@@ -127,7 +128,7 @@
     <div class="container text-center my-5">
         <h1 id="date"></h1>
         <button id="clear" onclick="cleartime()" class="btn-primary  px-5 py-2 mt-2">S T O P</button></div>
-    <div class="container d-flex justify-content-center  py-5">
+    <div class="container d-flex justify-content-center  py-5 bg-light border border-primary my-5">
         <div class="main-clock d-flex justify-content-center align-items-center">
             <div id="minutesPointer"></div>
             <div id="secondsPointer"></div>
