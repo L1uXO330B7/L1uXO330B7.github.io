@@ -7,28 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <style>
+        body {
+            font-family: fantasy, monospace;
+            background-color: #f0e68c;
+        }
+        
+        .banner img {
+            width: 5%;
+        }
+        
         .banner {
             margin: 0 auto;
             padding: 0px;
             width: 100%;
             height: 100vh;
-            background-image: url(../img/banner.jpeg);
-            background-position: 45% 75%;
+            background-image: url(../img/end.png);
+            background-position: center;
+            background-size: cover
         }
         
         .container {
             margin: 0 auto;
-            width: 100%;
+            width: 90%;
         }
         
         .header {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
             text-align: center;
-            background-color: rgba(252, 230, 201, 0.7);
+            background-color: rgba(1, 1, 1, 0.3);
+        }
+        
+        .bg-team {
+            background-color: deepskyblue;
+        }
+        
+        .text-bg {
+            background: rgba(1, 1, 1, 0.1);
+            background-image: url(../img/LOGO白-01.png);
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            background-position: center;
+            background-size: 110%;
+            padding: 1% 1% 1% 1%;
         }
         
         .card-btn {
+            border-radius: 71%;
+            background-color: rgba(0, 0, 0, 0.7);
             width: 50%;
+        }
+        
+        .card-btn>img {
+            border-radius: 71%;
         }
         
         img {
@@ -36,11 +71,13 @@
         }
         
         h1 {
-            color: #ffff;
+            color: #ecd8a1;
+            font-size: 40px;
             font-weight: bold;
         }
         
         p {
+            font-weight: bolder;
             font-size: 20px;
         }
         
@@ -62,6 +99,8 @@
         .card-text h2 {
             font-size: 28px;
             font-weight: bolder;
+            color: #fff;
+            background-color: black;
         }
         
         .card-text h2>span {
@@ -80,7 +119,7 @@
             flex-direction: column;
             align-items: center;
             padding: 1%;
-            width: 45%;
+            width: 35%;
         }
         
         .article {
@@ -101,12 +140,16 @@
         
         .article-card>img {
             width: 47%;
+            box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px 5px;
         }
         
         .card-text>h3 {
+            font-style: italic;
+            color: #ffffff;
             font-weight: bolder;
             font-size: 40px;
             margin-bottom: 30px;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
         
         .f-reverse {
@@ -114,10 +157,67 @@
         }
         
         .card-text>h4 {
-            font-size: 24px;
+            font-style: italic;
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            margin-bottom: 30px;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 black, 0 -1px black;
+        }
+        
+        .remind-text {
+            letter-spacing: 10px;
+            font-weight: bolder;
+            font-size: 30px;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .team-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .team-img {
+            padding-left: 4%;
+        }
+        
+        .img-list {
+            background-color: deepskyblue;
+            padding: 5% 0%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .img-list>img {
+            width: 20%;
+            height: 20%;
+        }
+        
+        .text-bottom {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .text-bottom>img {
+            width: 15%;
+            height: 15%;
         }
         
         @media (max-width: 1000px) {
+            .banner {
+                margin: 0 auto;
+                padding: 0px;
+                width: 100%;
+                height: 100vh;
+                background-image: url(../img/end.png);
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat
+            }
             .card {
                 width: 75%;
             }
@@ -126,17 +226,28 @@
                 flex-direction: column;
             }
             .card-text {
-                width: 75%;
+                width: 100%;
                 margin-top: 15px;
                 display: none;
                 flex-direction: column;
                 align-items: center;
             }
             .article-card {
+                width: 90%;
                 flex-direction: column;
             }
             .article-card>img {
                 width: 80%;
+            }
+            .text-bottom {
+                flex-direction: column;
+            }
+            .text-bottom>img {
+                width: 35%;
+                height: 35%;
+            }
+            .banner img {
+                width: 10%;
             }
         }
         
@@ -154,6 +265,21 @@
             .show {
                 display: flex;
             }
+            .remind-text {
+                font-size: 24px;
+            }
+            .team-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .team-img {
+                padding-left: 0%;
+            }
+            .banner img {
+                width: 20%;
+            }
         }
     </style>
 </head>
@@ -162,29 +288,34 @@
     <!-- banner -->
     <div class="banner">
         <div class="header">
-            <h1>高科技行銷第四組</h1>
+            <img src="../img/LOGO黑-01.png">
+            <h1>All In One</h1>
         </div>
     </div>
     <!-- 人物介紹頁 -->
-    <ul class="container card-list">
+    <div class="container remind-text">
+        <h3>點擊人像 <i class="fas fa-chevron-circle-down"></i> 查看更多</h3>
+
+    </div>
+    <ul class="container card-list bg-team">
         <li class="card">
             <a href="#" class="card-btn" id="card-btn1"><img src="../img/育愷(黑白)-01.png"></a>
-            <div class="card-text">
+            <div class="card-text text-bg">
                 <h2>育愷 <span>外語系</span></h2>
                 <p>大家好，我是育愷，幹話型玩家，然後會一點網頁設計，再加上一些行銷技巧及分析天，有贏過一些比賽，不過這些只是皮毛，僅此而已，外語什麼的一概不會，可謂中庸之材。才疏學淺，稍微不要臉，路上有一塊錢什麼的也會去撿。</p>
             </div>
         </li>
         <li class="card">
             <a href="#" class="card-btn" id="card-btn2"><img src="../img/品萱(黑白)-01.png"></a>
-            <div class="card-text">
+            <div class="card-text text-bg">
                 <h2>品萱 <span>數位系</span></h2>
-                <p>唷 Guys，我是品萱本人啦，如果家裡有需要清潔打掃，歡迎撥打0962025660專線，將會有專人為您到府服務！（如果可以希望提供免費下午茶點心 )，除了打掃之外，還會美術設計，電繪，喜歡講很冷的笑話，如果場子太熱的話，也可以找我啦，全球暖化靠我解決了 !
+                <p>唷 Guys，我是品萱本人啦，如果家裡有需要清潔打掃，歡迎撥打0962025660專線，將會有專人為您到府服務！(如果可以希望提供免費下午茶點心)，除了打掃之外，還會美術設計，電繪，喜歡講很冷的笑話，如果場子太熱的話，也可以找我啦，全球暖化靠我解決了 !
                 </p>
             </div>
         </li>
         <li class="card">
             <a href="#" class="card-btn" id="card-btn3"><img src="../img/嘉珣(黑白)-01.png"></a>
-            <div class="card-text">
+            <div class="card-text text-bg">
                 <h2>嘉珣 <span>行銷系</span></h2>
                 <p>想法很多，可以提供各式的點子或行銷方案，也有滿多上台報告或相關的經驗，還有額外的應該是⋯⋯會唱歌算特色嗎😂
                 </p>
@@ -192,34 +323,43 @@
         </li>
         <li class="card">
             <a href="#" class="card-btn" id="card-btn4"><img src="../img/阿鵝(黑白)-01.png"></a>
-            <div class="card-text">
+            <div class="card-text text-bg">
                 <h2>郁敏 <span>升資系</span></h2>
                 <p>小名阿鵝，南部客家人。想要最爆炸的行銷效果，卻只有最微薄的預算嗎？讓有客家資歷超過20年的阿鵝，教你如何花小錢、賺大錢！ 能力：做簡報、AI、辦活動
                 </p>
             </div>
         </li>
     </ul>
-    <ul class="article container card-list">
-        <li class="article-card">
-            <img src="../img/pexels-photo-355948.jpeg" class="article_img">
-            <div class="card-text show">
-                <h3>All in ONE 全方位！</h3>
-            </div>
-        </li>
-        <li class="article-card  f-reverse">
-            <img src="../img/pexels-photo-2.jpeg" class="article_img">
-            <div class="card-text show">
-                <h3>一組抵六組</h3>
-                <h3>你要的都在這一組</h3>
-                <h4>組員全來自不同科系，多功能的團隊</h4>
-                <h4 style="margin-top: 20px;">你要的全拿走 !</h4>
-            </div>
-        </li>
-
-    </ul>
+    <div class="container team-list">
+        <div class="img-list"><img src="../img/外語系-01.png"><img src="../img/數位系-01.png"><img src="../img/生資系.png"><img src="../img/行銷系-01.png"></div>
+    </div>
+    <div class="text-bottom">
+        <div class="card-text show ">
+            <h3 style="font-size: 50px; ">All</h3>
+            <h3>In
+            </h3>
+            <h3>ONE</h3>
+            <h3 style="font-size: 45px; ">全方位</h3>
+        </div>
+        <img src="../img/pcda.png ">
+        <div class="card-text show">
+            <h3>本組特色:</h3>
+            <h3>配合性高</h3>
+            <h3>PCDA 循環式品管</h3>
+            <h3>歌聲優</h3>
+        </div>
+        <div class="card-text show ">
+            <h3>一組抵六組</h3>
+            <h3>你要的都在這一組</h3>
+            <h4>組員全來自不同科系
+            </h4>
+            <h4>多功能的團隊</h4>
+            <h4 style="margin-top: 20px; ">你要的全拿走 !</h4>
+        </div>
+    </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+<!-- <script>
     $(document).ready(function() {
         $('#card-btn1').click(function(event) {
             event.preventDefault();
@@ -268,54 +408,94 @@
             } else {
                 $('#card-btn4').children().attr('src', '../img/阿鵝(上色)-01.png')
             }
-        });
-        // mouseover()
-        $('#card-btn1').hover(function(event) {
-            event.preventDefault();
-            console.log(event);
-            let el = $(this).children().attr('src');
-            console.log(el);
-            if (el == '../img/育愷(上色)-01.png') {
-                $('#card-btn1').children().attr('src', '../img/育愷(黑白)-01.png')
-            } else {
-                $('#card-btn1').children().attr('src', '../img/育愷(上色)-01.png')
-            }
-        });
-        $('#card-btn2').hover(function(event) {
-            event.preventDefault();
-            console.log(event);
-            let el = $(this).children().attr('src');
-            console.log(el);
-            if (el == '../img/品萱(上色)-01.png') {
-                $('#card-btn2').children().attr('src', '../img/品萱(黑白)-01.png')
-            } else {
-                $('#card-btn2').children().attr('src', '../img/品萱(上色)-01.png')
-            }
-        });
-        $('#card-btn3').hover(function(event) {
-            event.preventDefault();
-            console.log(event);
-            let el = $(this).children().attr('src');
-            console.log(el);
-            if (el == '../img/嘉珣(上色)-01.png') {
-                $('#card-btn3').children().attr('src', '../img/嘉珣(黑白)-01.png')
-            } else {
-                $('#card-btn3').children().attr('src', '../img/嘉珣(上色)-01.png')
-            }
-        });
-        $('#card-btn4').hover(function(event) {
-            event.preventDefault();
-            console.log(event);
-            let el = $(this).children().attr('src');
-            console.log(el);
-            if (el == '../img/阿鵝(上色)-01.png') {
-                $('#card-btn4').children().attr('src', '../img/阿鵝(黑白)-01.png')
-            } else {
-                $('#card-btn4').children().attr('src', '../img/阿鵝(上色)-01.png')
-            }
-        });
+        }); -->
+<!-- // mouseover()
+        // $('#card-btn1').hover(function(event) {
+        //     event.preventDefault();
+        //     console.log(event);
+        //     let el = $(this).children().attr('src');
+        //     console.log(el);
+        //     if (el == '../img/育愷(上色)-01.png') {
+        //         $('#card-btn1').children().attr('src', '../img/育愷(黑白)-01.png')
+        //     } else {
+        //         $('#card-btn1').children().attr('src', '../img/育愷(上色)-01.png')
+        //     }
+        // });
+        // $('#card-btn2').hover(function(event) {
+        //     event.preventDefault();
+        //     console.log(event);
+        //     let el = $(this).children().attr('src');
+        //     console.log(el);
+        //     if (el == '../img/品萱(上色)-01.png') {
+        //         $('#card-btn2').children().attr('src', '../img/品萱(黑白)-01.png')
+        //     } else {
+        //         $('#card-btn2').children().attr('src', '../img/品萱(上色)-01.png')
+        //     }
+        // });
+        // $('#card-btn3').hover(function(event) {
+        //     event.preventDefault();
+        //     console.log(event);
+        //     let el = $(this).children().attr('src');
+        //     console.log(el);
+        //     if (el == '../img/嘉珣(上色)-01.png') {
+        //         $('#card-btn3').children().attr('src', '../img/嘉珣(黑白)-01.png')
+        //     } else {
+        //         $('#card-btn3').children().attr('src', '../img/嘉珣(上色)-01.png')
+        //     }
+        // });
+        // $('#card-btn4').hover(function(event) {
+        //     event.preventDefault();
+        //     console.log(event);
+        //     let el = $(this).children().attr('src');
+        //     console.log(el);
+        //     if (el == '../img/阿鵝(上色)-01.png') {
+        //         $('#card-btn4').children().attr('src', '../img/阿鵝(黑白)-01.png')
+        //     } else {
+        //         $('#card-btn4').children().attr('src', '../img/阿鵝(上色)-01.png')
+        //     }
+        // });
+    }); -->
+</script>
+<script>
+    $(document).ready(function() {
 
+        // https://stackoverflow.com/questions/2432003/combine-hover-and-click-functions-jquery
+
+        $('.card-btn').on('click', function(event) {
+            event.preventDefault();
+            // console.log('event', event);
+            // console.log('event.type', event.type); // 抓該事件的名稱 e.g. click / mouseover
+            // console.log('$(event)', $(event.currentTarget)); // 直接抓觸發事件的元素，類似 this，但比較明確
+
+            let ATag = $(event.currentTarget);
+            // console.log('ATag', ATag);
+            // children() / parent() 這種方法會寫死 html 不建議，可能會有更好的方法
+            let ImgTag = ATag.children();
+            // console.log('ImgTag', ImgTag);
+
+            let ImgSrc = ImgTag.attr('src');
+            // console.log('ImgSrc', ImgSrc);
+
+            if (event.type == 'click')
+                ATag.siblings().slideToggle().css('display', 'flex');
+
+            // 其實也不算太好的寫法，很吃擋名，除非能控制檔名
+            if (ImgSrc.indexOf('黑白') >= 0) {
+                ImgSrc = ImgSrc.replace('黑白', '上色');
+            } else {
+                ImgSrc = ImgSrc.replace('上色', '黑白');
+            }
+            ImgTag.attr('src', ImgSrc)
+            ImgTag.attr('style', 'background-color:' + getRandomColor() + ';');
+
+        });
     });
+
+    function getRandomColor() {
+        var rgb = 'rgb(' + Math.floor(Math.random() * 225) + ',' + Math.floor(Math.random() * 225) + ',' + Math.floor(Math.random() * 225) + ',0.5)';
+        // console.log(rgb);
+        return rgb;
+    }
 </script>
 
 </html>
