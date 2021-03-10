@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="icon" href="../img/LOGO黑-01.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <style>
         body {
             font-family: fantasy, monospace;
-            background-color: #f0e68c;
+            background-color: #fbf8f2;
         }
         
         .banner img {
@@ -100,11 +101,12 @@
         .card-text h2 {
             font-size: 28px;
             font-weight: bolder;
-            color: #fff;
-            background-color: black;
+            color: black;
+            background-color: #f8d367;
         }
         
         .card-text h2>span {
+            padding-left: 5px;
             font-weight: normal;
             font-size: 24px;
         }
@@ -200,6 +202,8 @@
         }
         
         .text-bottom {
+            padding-top: 10px;
+            border: 5px black double;
             margin-top: 20px;
             align-items: center;
             display: flex;
@@ -213,6 +217,35 @@
         
         .show {
             display: flex;
+        }
+        
+        .color-test {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .color-test>h3 {
+            letter-spacing: 5px;
+            font-size: 32px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            font-weight: bolder;
+        }
+        
+        @keyframes example {
+            0% {
+                color: #b16147;
+            }
+            25% {
+                color: #f8d367;
+            }
+            50% {
+                color: #21395c;
+            }
+            100% {
+                color: #586c53;
+            }
         }
         
         footer {
@@ -335,14 +368,14 @@
         <li class="card">
             <a href="#" class="card-btn" id="card-btn1"><img src="../img/育愷(黑白)-01.png"></a>
             <div class="card-text text-bg">
-                <h2>育愷 <span>外語系</span></h2>
+                <h2>Carl <span><i class="fas fa-laptop-code"></i></span></h2>
                 <p>大家好，我是育愷，幹話型玩家，然後會一點網頁設計，再加上一些行銷技巧及分析天，有贏過一些比賽，不過這些只是皮毛，僅此而已，外語什麼的一概不會，可謂中庸之材。才疏學淺，稍微不要臉，路上有一塊錢什麼的也會去撿。</p>
             </div>
         </li>
         <li class="card">
             <a href="#" class="card-btn" id="card-btn2"><img src="../img/品萱(黑白)-01.png"></a>
             <div class="card-text text-bg">
-                <h2>品萱 <span>數位系</span></h2>
+                <h2>Amy <span><i class="fas fa-palette"></i></span></h2>
                 <p>唷 Guys，我是品萱本人啦，如果家裡有需要清潔打掃，歡迎撥打0962025660專線，將會有專人為您到府服務！(如果可以希望提供免費下午茶點心)，除了打掃之外，還會美術設計，電繪，喜歡講很冷的笑話，如果場子太熱的話，也可以找我啦，全球暖化靠我解決了 !
                 </p>
             </div>
@@ -350,7 +383,7 @@
         <li class="card">
             <a href="#" class="card-btn" id="card-btn3"><img src="../img/嘉珣(黑白)-01.png"></a>
             <div class="card-text text-bg">
-                <h2>嘉珣 <span>行銷系</span></h2>
+                <h2>Mandy <span><i class="fas fa-microphone-alt"></i></span></h2>
                 <p>想法很多，可以提供各式的點子或行銷方案，也有滿多上台報告或相關的經驗，還有額外的應該是⋯⋯會唱歌算特色嗎😂
                 </p>
             </div>
@@ -358,7 +391,7 @@
         <li class="card">
             <a href="#" class="card-btn" id="card-btn4"><img src="../img/阿鵝(黑白)-01.png"></a>
             <div class="card-text text-bg">
-                <h2>郁敏 <span>升資系</span></h2>
+                <h2>Emma <span><i class="fas fa-donate"></i></span></h2>
                 <p>小名阿鵝，南部客家人。想要最爆炸的行銷效果，卻只有最微薄的預算嗎？讓有客家資歷超過20年的阿鵝，教你如何花小錢、賺大錢！ 能力：做簡報、AI、辦活動
                 </p>
             </div>
@@ -394,6 +427,9 @@
     </div>
     <div class="color-test container">
         <img src="../img/colors.PNG">
+        <a href="https://ktestone.com/kapable.github.io/personalColorCN/"><img src="../img/personalColorCN-intro.png"></a>
+        <h3>想知道自己的個性嗎!?</h3>
+        <h3>也許你是一個很棒的人唷!</h3>
     </div>
     <footer>
         <div class="footer-logo"><img src="../img/LOGO白-01.png">
