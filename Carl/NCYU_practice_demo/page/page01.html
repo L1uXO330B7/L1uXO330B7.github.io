@@ -37,7 +37,7 @@
         
         .header {
             width: 100%;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             display: flex;
             text-align: center;
@@ -73,7 +73,7 @@
         }
         
         h1 {
-            color: #ecd8a1;
+            color: #ffff;
             font-size: 40px;
             font-weight: bold;
         }
@@ -222,6 +222,10 @@
         .color-test {
             text-align: center;
             margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         
         .color-test>h3 {
@@ -249,10 +253,11 @@
         }
         
         footer {
+            align-items: center;
             display: flex;
             justify-content: space-between;
             padding: 10px 10px;
-            background-color: rgba(1, 1, 1, 0.3);
+            background-color: rgba(1, 1, 1, 0.8);
         }
         
         .footer-logo {
@@ -261,11 +266,22 @@
         }
         
         .footer-logo>h3 {
+            color: white;
             font-size: 30px;
         }
         
         .footer-logo>img {
             width: 100px;
+        }
+        
+        .mx-2 {
+            margin: 0px 10px;
+        }
+        
+        .contact i {
+            color: white;
+            font-size: 40px;
+            ;
         }
         
         @media (max-width: 1000px) {
@@ -347,6 +363,14 @@
             .banner img {
                 width: 20%;
             }
+            footer {
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 10px;
+                background-color: rgba(1, 1, 1, 0.3);
+            }
         }
     </style>
 </head>
@@ -355,7 +379,7 @@
     <!-- banner -->
     <div class="banner">
         <div class="header">
-            <img src="../img/LOGO黑-01.png">
+            <img src="../img/LOGO白-01.png">
             <h1>All In One</h1>
         </div>
     </div>
@@ -431,12 +455,18 @@
         <h3>想知道自己的個性嗎!?</h3>
         <h3>也許你是一個很棒的人唷!</h3>
     </div>
+
+    </div>
     <footer>
         <div class="footer-logo"><img src="../img/LOGO白-01.png">
             <h3>All in One</h3>
         </div>
-        <div></div>
-        <div></div>
+        <div class="contact">
+            <a href="https://www.facebook.com/L1uXO330B7/" target="_blank" class="mx-2"><i class="fab fa-facebook-square h1"></i></a>
+            <a href="https://github.com/L1uXO330B7" target="_blank" class="mx-2"></a>
+            <a href="https://line.me/ti/p/R0gBYXr3SR" target="_blank" class="mx-2"><i class="fab fa-line h1"></i></a>
+        </div>
+        <h3 style="color: white;">Copyright © [2021] [All in One]. All rights reserved.</h3>
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
