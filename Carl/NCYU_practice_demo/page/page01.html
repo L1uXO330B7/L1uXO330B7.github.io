@@ -23,7 +23,7 @@
             margin: 0 auto;
             padding: 0px;
             width: 100%;
-            height: 100vh;
+            height: 800px;
             background-image: url(../img/封面666-01.png);
             background-position: center;
             background-size: cover
@@ -35,12 +35,17 @@
         }
         
         .header {
+            margin-bottom: 5px;
             width: 100%;
             justify-content: flex-start;
             align-items: center;
             display: flex;
             text-align: center;
             background-color: rgba(1, 1, 1, 0.3);
+        }
+        
+        .header>img {
+            width: 80px;
         }
         
         .bg-team {
@@ -64,7 +69,7 @@
         }
         
         .card-btn>img {
-            border-radius: 71%;
+            border-radius: 7%;
         }
         
         img {
@@ -289,8 +294,8 @@
                 margin: 0 auto;
                 padding: 0px;
                 width: 100%;
-                height: 100vh;
-                background-image: url(../img/end.png);
+                height: 600px;
+                background-image: url(../img/封面666-01.png);
                 background-position: center;
                 background-size: 100%;
                 background-repeat: no-repeat
@@ -333,17 +338,22 @@
                 margin: 0 auto;
                 padding: 0px;
                 width: 100%;
-                height: 50vh;
-                background-image: url(../img/end.png);
+                height: 600px;
+                background-image: url(../img/封面_手機板-01.png);
                 background-position: center;
                 background-size: 100%;
                 background-repeat: no-repeat
             }
             .card-text>h3 {
-                font-size: 24px;
+                font-size: 20px;
             }
             .card-text>h4 {
-                font-size: 20px;
+                font-size: 16px;
+            }
+            .text-bottom>img {
+                width: 50%;
+                height: 50%;
+                margin-bottom: 15px;
             }
             .show {
                 display: flex;
@@ -384,12 +394,12 @@
 </head>
 
 <body>
+    <div class="header">
+        <img src="../img/LOGO白-01.png" style="margin-left: 20px;">
+        <h1 style="margin-left: 20px;">All In One</h1>
+    </div>
     <!-- banner -->
     <div class="banner">
-        <div class="header">
-            <img src="../img/LOGO白-01.png" style="margin-left: 20px;">
-            <h1 style="margin-left: 20px;">All In One</h1>
-        </div>
     </div>
     <!-- 人物介紹頁 -->
     <div class="container remind-text">
@@ -434,15 +444,12 @@
     </div>
     <div class="text-bottom container">
         <div class="text-bottom-text">
-            <h3 style="font-size: 50px; ">All</h3>
-            <h3>In
-            </h3>
-            <h3>ONE</h3>
-            <h3 style="font-size: 45px; ">全方位</h3>
+            <h3 style="font-size: 50px; color:#3a5160">All In ONE</h3>
+            <h3 style="font-size: 45px; color:#3a5160">全方位</h3>
         </div>
         <img src="../img/pcda.png ">
         <div class="text-bottom-text">
-            <h3>本組特色:</h3>
+            <h3 style="font-size: 50px; color:#3a5160">本組特色:</h3>
             <h3>配合性高</h3>
             <h3>幹話多</h3>
             <h3>PDCA 循環式品管</h3>
